@@ -1,0 +1,10 @@
+.song-list {
+    max-height: calc(100vh - 220px);
+    overflow-y: scroll;
+    & > div {
+        margin: 10px;
+    }
+    .example-card {
+        cursor: pointer;
+    }
+}

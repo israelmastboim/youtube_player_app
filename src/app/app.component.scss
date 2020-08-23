@@ -1,0 +1,8 @@
+.main-content {
+    display: flex;
+    .left-side {
+        border: 1px solid black;
+        margin: 4px 10px;
+        min-width: 320px;
+    }
+}

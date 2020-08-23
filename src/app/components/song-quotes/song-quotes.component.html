@@ -1,0 +1,16 @@
+<div class="quote-box">
+    <div class="play-icon" (click)="emitQuoteOffset()">
+        <mat-icon color="primary">play_arrow</mat-icon>
+        <div class="quote-number">
+            Quote# {{quoteIndex + 1}}
+        </div>
+    </div>
+    
+    <div>
+        {{ quote.text }}
+    </div>
+    <div >
+        {{ quote.offset | minuteSeconds}}
+    </div>
+    
+</div>

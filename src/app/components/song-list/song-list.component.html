@@ -1,0 +1,18 @@
+
+<div class="song-list">
+  <div (click)="selectSond(song)" *ngFor="let song of filteredSongs">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{song.title}}</mat-card-title>
+        </mat-card-header>
+    </mat-card>
+</div>
+<div *ngIf="songs?.length > 0 && filteredSongs?.length == 0">
+  <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>No Result</mat-card-title>
+      </mat-card-header>
+  </mat-card>
+</div>
+</div>
+
