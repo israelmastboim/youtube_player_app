@@ -20,6 +20,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SongQuotesComponent } from './components/song-quotes/song-quotes.component';
 import { MinuteSecondsPipe } from './pipes/minute-seconds.pipe';
+import { APP_CONFIG, APP_DI_CONFIG } from './config/api.config';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,10 @@ import { MinuteSecondsPipe } from './pipes/minute-seconds.pipe';
     MatProgressSpinnerModule,
     NgxYoutubePlayerModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_CONFIG,
+    useValue: APP_DI_CONFIG
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
